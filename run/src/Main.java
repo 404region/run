@@ -1,6 +1,4 @@
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import java.beans.Expression;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -194,13 +192,6 @@ public class Main {
             String patternStr = "^(\\d+)(\\D)(\\d+)$";
             Pattern pattern = Pattern.compile(patternStr);
             Matcher matcher = pattern.matcher(formatInput);
-
-            /*String patternErrorStr = "(\\d+)(\\D)(\\d+)(\\D)";
-            Pattern patternError = Pattern.compile(patternStr);
-            Matcher matcherError = pattern.matcher(formatInput);
-            if (matcherError.find()) {
-                throw new Exception("Оба операнда должны быть в одной системе исчисления и количество операндов должно быть строго 2");
-            }*/
 
             if (matcher.find())
             {
